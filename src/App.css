@@ -96,6 +96,8 @@ html, body {
 }
 
 .right-panel .chatbox-header {
+  display: flex;
+  flex-direction: column;
   height: 30px;
   padding: 20px;
   font-size: 15px;
@@ -149,4 +151,37 @@ html, body {
   overflow-y: auto; /* Enable vertical scrolling */
   padding: 10px;
   border: 1px solid #ccc; /* Optional styling */
+}
+
+.previousChatNav i {
+  margin-left: 0;
+  margin-right: 100%;
+}
+
+.previousChatNav i:hover {
+  cursor: pointer;
+}
+
+.addNewChat i {
+  margin-right: 0;
+  margin-left: 100%;
+}
+
+.previous-chats-list {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.34);
+}
+
+.previous-chat {
+  display: flex;
+  flex-direction: column;
+}
+
+.previous-chat-delete, .previous-chat-chatNumber{
+  width: 50%;
+}
+.previous-chat-delete {
+  align-self: last baseline;
+  text-align: right;
+  color: red;
 }
